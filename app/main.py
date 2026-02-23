@@ -6,7 +6,6 @@ from app import models
 models.Base.metadata.create_all(bind=engine)
 from .routes import auth, products, orders, upload
 
-Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
